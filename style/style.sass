@@ -1,0 +1,444 @@
+body  
+  margin: 0
+  padding: 0
+  overflow-x: hidden
+  font-family: "Raleway",Helvetica,Arial
+  header
+      position: sticky
+      top: 0px
+      background: rgba(0,0,0,.6)
+      width: 100%
+      height: 100px
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 14px
+      font-weight: 500
+      color: white
+      z-index: 10
+      .logo
+            margin-right: 220px
+            a
+                text-decoration: none
+                vertical-align: middle
+            .waxom-svg
+                fill: white
+                transition: 0.4s fill
+            .waxom-txt
+                color: white
+                font-size: 34px
+                font-weight: 200
+                transition: 0.4s color
+            &:hover .waxom-svg
+                fill: orange
+                transition: 0.4s fill
+            &:hover .waxom-txt
+                color: orange
+                transition: 0.4s color
+      nav
+        ul
+            padding: 0px
+            list-style-type: none
+            li
+                display: inline
+            a
+                text-decoration: none
+                color: white
+                padding-right: 30px
+                transition: 0.4s color
+                &:hover
+                    color: orange
+                    transition: 0.4s color
+.search
+    i
+        cursor: pointer
+        fill: white
+        padding-left: 30px
+        transition: 0.4s fill
+        &:hover
+            fill: orange
+            transition: 0.4s fill
+main
+    background: rgba(0,0,0,.6)
+    
+    .portfolio
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-flow: column
+        height: 867px
+        img
+            width: 100vw
+            position: absolute
+            top: 0
+            z-index: -1
+        div
+            text-align: center
+            color: white
+            h1
+                margin: 0px
+                padding-bottom: 10px
+                font-size: 36px
+                font-weight: normal
+            p
+                margin: 0px
+                padding-bottom: 15px
+                font-size: 52px
+                font-weight: 800
+            .arrow-left
+                height: 50px
+                width: 50px
+                border: 2px solid #a2a19f
+                transform: rotate(45deg)
+                position: absolute
+                left: 150px
+                border-top: none
+                border-right: none
+                cursor: pointer
+                transition: 0.4s border-color
+                &:hover
+                    border-color: orange
+                    transition: 0.4s border-color
+            .arrow-right
+                height: 50px
+                width: 50px
+                border: 2px solid #a2a19f
+                transform: rotate(45deg)
+                position: absolute
+                right: 150px
+                border-bottom: none
+                border-left: none
+                cursor: pointer
+                transition: 0.4s border-color
+                &:hover
+                    border-color: orange
+                    transition: 0.4s border-color
+            h4
+                margin: 0px
+                padding-bottom: 50px
+                font-weight: normal
+                line-height: 1.5
+            .btn
+                margin: 0 auto
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 170px
+                height: 53px
+                color: white
+                text-decoration: none
+                text-transform: uppercase
+                font-weight: bold
+                background: #998675
+                border-radius: 3px
+                transition: 0.4s color
+                &:hover
+                    color: orange
+                    transition: 0.4s color
+                &:active
+                    background: #927b69
+    .pagination
+        display: flex
+        justify-content: center
+        height: 25px
+        padding-bottom: 33px
+        .pagination-link
+            display: block
+            width: 10px
+            min-height: 10px
+            margin: 5px
+            background-color: #ccc
+            border-radius: 50%
+            border: 2px solid transparent
+            transition: 0.8s border, 0.8s background-color
+            &:hover
+                border: 2px solid orange
+                background-color: transparent
+                transition: 0.4s border, 0.4s background-color
+    .desing
+        height: 370px
+        background: white
+        display: flex
+        justify-content: center
+        .web
+            cursor: pointer
+            width: 300px
+            text-align: center
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            margin: 80px 15px 80px 15px
+            box-sizing: border-box
+            color: rgb(85, 85, 85)
+            &::after
+                content: ""
+                width: 70px
+                height: 3px
+                background-color: rgb(85, 85, 85)
+                transition: 0.8s background-color
+            &:hover::after
+                background-color: orange
+                transition: 0.8s background-color
+            .web-icon
+                fill: rgb(85, 85, 85)
+                transition: 0.8s margin-left, 0.8s fill
+            &:hover .web-icon
+                fill: orange
+                margin-left: 40px
+                transition: 0.8s margin-left, 0.8s fill
+            .web-icon1
+                margin-top: -9px
+                fill: rgb(85, 85, 85)
+                transition: 0.8s margin-left, 0.8s fill
+            &:hover .web-icon1
+                fill: orange
+                margin-left: 40px
+                transition: 0.8s margin-left, 0.8s fill
+            .web-title
+                height: auto
+                width: 100%
+                margin: 25px 0px 0px 0px
+                font-size: 22px
+                font-weight: bold
+                color: rgb(85, 85, 85)
+                transition: 0.8s color
+            &:hover .web-title
+                color: orange
+                transition: 0.8s color
+            .web-txt
+                margin: 15px 0px 25px 0px
+                font-size: 14px
+                color: rgb(140,140,140)
+                letter-spacing: 0.4px
+    .ideas
+        height: 850px         
+        background: #fbfaf8
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        p
+            width: 100%
+            text-align: center
+            font-size: 30px
+            font-weight: bold
+            color: #555555
+            margin-top: 80px
+            margin-bottom: 35px
+        span   
+            width: 100%
+            text-align: center
+            font-size: 16px
+            color: #8c8c8c
+            letter-spacing: 0.3px
+            margin-bottom: 35px
+        .bg
+            height: 480px
+            width: 1230px
+            background-image: url(../img/bgcenter.png), url(../img/bgleft.png), url(../img/bgright.png)
+            background-size: contain, 60%, 60%
+            background-repeat: no-repeat 
+            background-position: center, bottom left, bottom right
+        .theme
+            height: 150px
+            width: 100%
+            background: #251d1b
+            display: flex
+            justify-content: center
+            align-items: center
+            div
+                p
+                    margin: 0 auto
+                    font-size: 28px
+                    font-weight: normal
+                    color: white
+                    span
+                        margin-right: 10px
+                        font-size: 28px
+                        font-weight: normal
+                        color: rgb(199, 178, 153)
+                span
+                    margin: 0 auto
+                    color: rgb(97, 88, 85)  
+            .btn
+                margin-left: 470px
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 170px
+                height: 53px
+                color: white
+                text-decoration: none
+                text-transform: uppercase
+                font-weight: bold
+                background: #998675
+                border-radius: 3px
+                transition: 0.4s color
+                &:hover
+                    color: orange
+                    transition: 0.4s color
+                &:active
+                    background: #927b69
+    .project
+        height: 1160px
+        background: white
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        p
+            margin: 80px 0px 30px 0px
+            width: 100%
+            text-align: center
+            font-size: 30px
+            font-weight: bold
+            color: #555555
+        span
+            width: 757px
+            text-align: center
+            font-size: 16px
+            color: #8c8c8c
+        div
+            display: flex
+            justify-content: center
+            width: 100%
+            .btn1
+                margin: 0px 5px 0px 5px
+                display: flex
+                justify-content: center
+                align-items: center
+                font-size: 14px
+                width: 70px
+                height: 32px
+                border: 1px solid #ebebeb
+                border-radius: 3px
+                text-decoration: none
+                color: #8c8c8c
+                transition: 0.8s
+                &:hover
+                    background: #998675
+                    color: white
+                    transition: 0.8s
+            .btn2
+                margin: 0px 5px 0px 5px
+                display: flex
+                justify-content: center
+                align-items: center
+                font-size: 14px
+                width: 120px
+                height: 32px
+                border: 1px solid #ebebeb
+                border-radius: 3px
+                text-decoration: none
+                color: #8c8c8c
+                transition: 0.8s
+                &:hover
+                    background: #998675
+                    color: white
+                    transition: 0.8s
+            .btn3
+                margin: 0px 5px 0px 5px
+                display: flex
+                justify-content: center
+                align-items: center
+                font-size: 14px
+                width: 130px
+                height: 32px
+                border: 1px solid #ebebeb
+                border-radius: 3px
+                text-decoration: none
+                color: #8c8c8c
+                transition: 0.8s
+                &:hover
+                    background: #998675
+                    color: white
+                    transition: 0.8s
+        .load
+            width: 1300px
+            display: flex
+            flex-wrap: wrap
+            .card
+                position: relative
+                display: flex
+                flex-wrap: wrap
+                margin: 15px
+                height: 335px
+                width: 370px
+                cursor: pointer
+                .bg
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    transition: 0.8s
+                &:hover .bg
+                    background: rgba(0,0,0, .5)
+                    transition: 0.8s
+                img
+                    width: 100%
+                    height: 235px
+                .card-before
+                    position: relative
+                    height: 100px
+                    background: #fbfaf8
+                    transition: 0.8s
+                    display: flex
+                    align-content: center
+                    flex-wrap: wrap
+                    p
+                        margin: 0px 0px 6px 30px
+                        font-size: 20px
+                        text-align: left
+                        font-weight: 500
+                        color: #c7b299
+                    span
+                        margin: 6px 0px 0px 32px
+                        font-size: 14px
+                        text-align: left
+                        color: #d1d1d1
+                    &::before
+                        content: ''
+                        position: absolute
+                        background-color: transparent
+                        top: -10px
+                        left: 20px
+                        border-left: 15px solid transparent
+                        border-right: 15px solid transparent
+                        border-bottom: 10px solid #fbfaf8
+                        transition: 0.8s
+                &:hover .card-before
+                    background: #362f2d
+                    transition: 0.8s
+                &:hover .card-before::before
+                    border-bottom: 10px solid #362f2d
+                    transition: 0.8s
+        div
+            .btn
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 170px
+                height: 53px
+                color: white
+                text-decoration: none
+                text-transform: uppercase
+                font-weight: bold
+                background: #998675
+                border-radius: 3px
+                transition: 0.4s color
+                &:hover
+                    color: orange
+                    transition: 0.4s color
+                &:active
+                    background: #927b69
+
+
+            
+           
+
+                
+
+
+
+            
+            
+
+        
+                          
